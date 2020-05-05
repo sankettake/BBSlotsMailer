@@ -12,6 +12,6 @@ config.sender_password = 'XXXXXX'
 config.to_email = 'XXXXXX'
 
 // Dont keep it too short to avoid sending too many requests
-config.time_interval = 1
+config.time_interval = 15
 
 module.exports = config;
