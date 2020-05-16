@@ -54,7 +54,7 @@ const getData = async () => {
 };
 
 var task = cron.schedule(`*/${config.time_interval} * * * *`, async () => {
-  console.log(`running a every {config.time_interval} minutes`);
+  console.log(`running a every ${config.time_interval} minutes`);
   console.log(send_mail_flag)
   await getData();
   if (send_mail_flag) {
